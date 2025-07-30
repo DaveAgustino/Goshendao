@@ -38,13 +38,13 @@ export function HeroSection() {
         />
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-80 py-10 scroll-smooth">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[70vh]">
           {/* Left Content */}
           <div className="space-y-6">
             {/* Category Tags */}
             <motion.div
-              className="grid grid-cols-3 gap-6 text-xs text-gray-400 uppercase tracking-wider mb-8 font-space-grotesk"
+              className="grid grid-cols-3 gap-6  text-xs text-gray-400 uppercase tracking-wider mb-5 font-space-grotesk"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -55,7 +55,7 @@ export function HeroSection() {
               </div>
               <div>
                 <div className="text-gray-500 mb-1">YEAR</div>
-                <div className="text-white font-medium text-sm">2024</div>
+                <div className="text-white font-medium text-sm">2025</div>
               </div>
               <div>
                 <div className="text-gray-500 mb-1">TECH SOLUTIONS</div>
@@ -70,59 +70,32 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-orbitron">
-                GOSHENDAO
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#7affad] leading-tight font-orbitron">
+          GOSHEN DIGITAL GROUP
                 <br />
-                <span className="text-gray-400">Platform</span>
+          
               </h1>
 
-              <h2 className="text-xl md:text-2xl font-bold text-white leading-tight font-space-grotesk">
-                BUILD. GOVERN.
-                <br />
-                SCALE. AUTONOMOUSLY.
+              <h2 className="text-md md:text-4xl font-bold text-white/80 leading-tight font-space-grotesk">
+                BUILD. GOVERN. SCALE. AUTONOMOUSLY.
               </h2>
 
-              <h3 className="text-lg md:text-xl font-semibold text-gray-300 font-space-grotesk">
-                The Next-Generation DAO
-                <br />
-                Infrastructure Platform
+              <h3 className="text-sm md:text-xl font-semibold text-gray-300 font-space-grotesk">
+                The Next-Generation DAO Infrastructure Platform
               </h3>
 
-              <p className="text-gray-400 text-base leading-relaxed max-w-md font-inter">
+              <p className="text-gray-400 text-base leading-relaxed max-w-xl font-inter">
                 We build the infrastructure that powers decentralized organizations. Our platform integrates advanced
                 governance mechanisms, cross-chain treasury management, AI-enhanced decision-making systems, and
                 enterprise-grade security protocols.
               </p>
             </motion.div>
 
-            {/* Stats Section */}
-            <motion.div
-              className="space-y-3 pt-6"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              <div className="text-xs text-gray-400 uppercase tracking-wider font-space-grotesk">
-                HIGH-QUALITY
-                <br />
-                DEVELOPMENT
-              </div>
-              <div className="text-4xl font-bold text-white font-orbitron">+50</div>
-
-              {/* Progress Bar */}
-              <div className="w-48 h-1 bg-gray-800 rounded-full overflow-hidden">
-                <motion.div
-                  className="h-full bg-green-400 rounded-full"
-                  initial={{ width: 0 }}
-                  animate={{ width: "75%" }}
-                  transition={{ duration: 1.5, delay: 0.8, ease: "easeOut" }}
-                />
-              </div>
-            </motion.div>
+    
 
             {/* CTA Buttons */}
             <motion.div
-              className="flex flex-col sm:flex-row gap-3 pt-6"
+              className="flex flex-col sm:flex-row gap-3 pt-5"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -145,51 +118,51 @@ export function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right Side - Logo */}
-          <div className="flex items-center justify-center relative">
-            <motion.div
-              className="relative w-64 h-64 md:w-80 md:h-80 flex items-center justify-center"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.4 }}
-            >
-              {/* Subtle Static Glow Background */}
-              <div
-                className="absolute inset-0 rounded-full opacity-40"
-                style={{
-                  background: `
-                    radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.3) 0%, transparent 70%)
-                  `,
-                  filter: "blur(40px)",
-                }}
-              />
+{/* Right Side - Logo */}
+<div className="flex items-center justify-center relative">
+  <motion.div
+    className="relative w-[800px] h-[800px] flex items-center justify-center"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1, delay: 0.4 }}
+  >
+    {/* Subtle Static Glow Background */}
+    <div
+      className="absolute inset-0 rounded-full opacity-40"
+      style={{
+        background: `
+          radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.3) 0%, transparent 70%)
+        `,
+        filter: "blur(40px)",
+      }}
+    />
 
-              {/* Main Logo - Static */}
-              <div className="relative z-10">
-                <Image
-                  src="/goshendao-logo.png"
-                  alt="GOSHENDAO Logo"
-                  width={200}
-                  height={200}
-                  className="w-48 h-48 md:w-56 md:h-56"
-                  priority
-                />
-              </div>
+    {/* Main Logo - Static */}
+    <div className="relative z-10 w-[500px] h-[500px]">
+      <Image
+        src="/goshendao-logo.png"
+        alt="GOSHENDAO Logo"
+        width={500}
+        height={500}
+        className="w-[500px] h-[500px]"
+        priority
+      />
+    </div>
 
-              {/* GOSHENDAO Text - Moved Further Away and Bigger */}
-              <motion.div
-                className="absolute top-1/2 -right-16 transform -translate-y-1/2 font-orbitron"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.3 }}
-                transition={{ duration: 1, delay: 0.8 }}
-              >
-                <div className="text-white text-3xl md:text-4xl font-bold tracking-wider transform rotate-90 origin-center whitespace-nowrap">
-                  GOSHENDAO
-                </div>
-              </motion.div>
-            </motion.div>
-          </div>
-        </div>
+    {/* GOSHENDAO Text - Moved Further Away and Bigger */}
+    <motion.div
+      className="absolute top-1/2 -right-16 transform -translate-y-1/2 font-orbitron"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 0.3 }}
+      transition={{ duration: 1, delay: 0.8 }}
+    >
+      <div className="text-white text-9xl md:text-9xl font-bold tracking-wider transform -mb-96 rotate-90 origin-right whitespace-nowrap">
+        GOSHENDAO
+      </div>
+    </motion.div>
+  </motion.div>
+</div>
+</div>
       </div>
     </section>
   )
