@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${orbitron.variable} ${spaceGrotesk.variable}`}>
       <body
-        className={`${inter.className} bg-gradient-to-br from-black via-gray-900 to-green-900/20 text-white min-h-screen`}
+        className={`${inter.className}  text-white min-h-screen`}
       >
         <div className="grid-pattern min-h-screen">
           <PageTransitionProvider>

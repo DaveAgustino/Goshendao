@@ -14,10 +14,10 @@ export function HeroSection() {
         <div
           className="w-full h-full"
           style={{
-            backgroundImage: `
-              linear-gradient(rgba(34, 197, 94, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(34, 197, 94, 0.1) 1px, transparent 1px)
-            `,
+         backgroundImage: `
+            linear-gradient(#0C28231 px, transparent 1px),
+            linear-gradient(90deg, #427142 1px, transparent 1px)
+          `,
             backgroundSize: "50px 50px",
           }}
         />
@@ -28,12 +28,12 @@ export function HeroSection() {
         <div
           className="w-full h-full"
           style={{
-            background: `
-              radial-gradient(circle at 20% 20%, rgba(34, 197, 94, 0.15) 0%, transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.8) 0%, transparent 50%),
-              radial-gradient(circle at 40% 60%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
-              linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(21, 128, 61, 0.1) 100%)
-            `,
+       background: `
+          radial-gradient(circle at 20% 20%, #0d292426 0%, transparent 90%),
+          radial-gradient(circle at 80% 80%, #000000cc 0%, transparent 50%),
+          radial-gradient(circle at 90% 90%, #4373421a 0%, transparent 90%),
+          linear-gradient(135deg, #000000e6 0%, #4373421a 100%)
+        `,
           }}
         />
       </div>
@@ -131,7 +131,7 @@ export function HeroSection() {
       className="absolute inset-0 rounded-full opacity-40"
       style={{
         background: `
-          radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.3) 0%, transparent 70%)
+     radial-gradient(circle at 50% 50%, #22c55e4d 0%, transparent 70%)
         `,
         filter: "blur(40px)",
       }}
