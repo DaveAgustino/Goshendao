@@ -21,7 +21,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 border-t border-gray-800">
+    <footer className="bg-gradient-to-rfrom-[#0C28231] to-[#427142] border-gray-300">
       <motion.div
         className="max-w-7xl mx-auto px-6 lg:px-12"
         initial={{ opacity: 0, y: 50 }}
@@ -101,7 +101,7 @@ export function Footer() {
             viewport={{ once: true }}
           >
             <Link href="#" className="text-gray-400 hover:text-green-400 transition-colors text-sm font-inter">
-              Licensing
+           GoshenDev
             </Link>
           </motion.div>
         </div>
